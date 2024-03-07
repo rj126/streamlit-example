@@ -25,13 +25,6 @@ st.title("Name Matching App")
 name1 = st.text_input("Enter the first name:")
 name2 = st.text_input("Enter the second name:")
 
-# Title
-st.title("Name Matching App")
-
-# User input for two names
-name1 = st.text_input("Enter the first name:")
-name2 = st.text_input("Enter the second name:")
-
 # Display the entered names
 st.write("You entered the following names:")
 st.write(f"Name 1: {name1}")
