@@ -4,6 +4,9 @@ import pandas as pd
 import streamlit as st
 from openai import OpenAI
 
+# OpenAI API key
+openai.api_key = "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"
+
 # Title
 st.title("Name Matching App")
 
