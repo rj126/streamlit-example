@@ -2,7 +2,7 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-from OpenAI import openai
+from openai import OpenAI
 
 # Title
 st.title("Name Matching App")
