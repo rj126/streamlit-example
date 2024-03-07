@@ -4,8 +4,8 @@ import pandas as pd
 import streamlit as st
 from openai import OpenAI
 
-# OpenAI API key
-openai.api_key = "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"
+client = OpenAI(api_key=st.secrets["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""])
+ASST_PROMPT = "I need help making a decision."
 
 # Title
 st.title("Name Matching App")
