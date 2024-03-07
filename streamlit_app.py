@@ -30,22 +30,4 @@ st.write("You entered the following names:")
 st.write(f"Name 1: {name1}")
 st.write(f"Name 2: {name2}")
 
-"""
-# Button to trigger the request
-if st.button("Match Names"):
-    # Send request to OpenAI assistant
-    response = openai.Completion.create(
-        engine="asst_qLeO39Rs0DI6XxZGON3hOiNL",
-        prompt=f"Match the names '{name1}' and '{name2}'.",
-        max_tokens=50,
-        temperature=0.5,
-        top_p=1.0,
-        frequency_penalty=0.0,
-        presence_penalty=0.0,
-        stop=["\n"],
-    )
-    # Display the response
-    st.write("OpenAI Response:")
-    st.write(response.choices[0].text.strip())
-"""
 
