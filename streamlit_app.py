@@ -2,7 +2,6 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-import openai
 
 """
 # Welcome to Streamlit!
@@ -24,6 +23,19 @@ st.title("Name Matching App")
 name1 = st.text_input("Enter the first name:")
 name2 = st.text_input("Enter the second name:")
 
+# Title
+st.title("Name Matching App")
+
+# User input for two names
+name1 = st.text_input("Enter the first name:")
+name2 = st.text_input("Enter the second name:")
+
+# Display the entered names
+st.write("You entered the following names:")
+st.write(f"Name 1: {name1}")
+st.write(f"Name 2: {name2}")
+
+"""
 # Button to trigger the request
 if st.button("Match Names"):
     # Send request to OpenAI assistant
@@ -40,4 +52,5 @@ if st.button("Match Names"):
     # Display the response
     st.write("OpenAI Response:")
     st.write(response.choices[0].text.strip())
+"""
 
